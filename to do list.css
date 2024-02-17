@@ -1,0 +1,93 @@
+.app-container {
+    height: 100vh;
+    width: 100%;
+  }
+  .complete {
+    text-decoration: line-through;
+  }
+  body
+  {
+      background:linear-gradient(rgb(215, 214, 214) , #000);
+  }
+  .tr 
+  {
+      color: aliceblue;
+  }
+.pp{
+  transition: 0.8s;
+  color: #000;
+  
+}
+.pp:hover
+{
+  word-spacing: 2.5px;
+  letter-spacing: 2.5px;
+  
+}
+.name{
+  margin-bottom:50px;
+  transition: .8s;
+}
+.name:hover
+{
+  letter-spacing: 2.5px;
+  margin-top: -25px;
+}
+.d-flex align-items-center mb-3
+{
+  margin-bottom: -100px;
+}
+.motion
+{
+  background: #000;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.cirle
+{
+  width: 200px;
+  height: 200px;
+  border: 3px solid #fff;
+  position: absolute;
+  border-radius: 50%;
+  animation: circlea 3.5s
+  linear infinite;
+  
+}
+.cirle::before
+{
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #04fc43;
+  box-shadow: 0 0 20px #04fc43 ,
+  0 0 60px #04fc43;
+  z-index: 1;
+}
+@keyframes circlea {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.move {
+  transition: .8s;
+}
+.move:hover
+{
+  margin-top: -25px;
+}
